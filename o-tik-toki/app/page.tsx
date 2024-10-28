@@ -1,5 +1,16 @@
-export default function Home() {
+'use client'
+
+import MainLayout from "./layouts/MainLayout";
+
+
+const Home = ()=> {
   return (
-    <div>Home</div>
+    <>
+    <MainLayout>
+      <h1>Welcome to O Tik-Toki</h1>
+    </MainLayout>
+    </>
   );
 }
+
+export default Home
