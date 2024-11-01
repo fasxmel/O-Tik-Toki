@@ -1,14 +1,16 @@
-'use client'
-
+'use client';
 import MainLayout from "./layouts/MainLayout";
-
 
 const Home = ()=> {
   return (
     <>
+    
     <MainLayout>
-      <h1>Welcome to O Tik-Toki</h1>
+     <div>
+       <h1>Home</h1>
+     </div>
     </MainLayout>
+   
     </>
   );
 }
