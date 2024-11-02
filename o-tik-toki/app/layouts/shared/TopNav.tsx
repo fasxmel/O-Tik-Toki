@@ -24,13 +24,16 @@ const TopNav = ({children}: {children: React.ReactNode}) => {
         console.log('Go to search');
     }
 
-
+{/*TODO: responcive top nav whith <> <> */}
   return (
-    <div id='top-nav' className='fixed bg-white z-30 flex items-center w-full border-b h-[60px]'>
+
+     
+    <div id='top-nav' className='fixed bg-white z-30 flex items-center w-full border-b h-[80px]'>
         <div className={`flex items-center justify-between gap-6 w-full px-4 mx-auto ${pathname === '/' ? 'max-w-[1150px]' : ''}`}>
             
             <Link href={'/'}>
-               <img  className='min-w-[115px] w-[115px]' src="images/logo2.png" alt="logo" />
+                              {/*TODO: Responsive search on mobile*/}  
+               <img  className='w-[80px] h-[80px] rounded-full' src="images/logo2.png" alt="logo" />
             </Link>
                           {/*TODO: Responsive search on mobile*/}
             <div className='relative flex md:flex items-center justify-end bg-[#f1f1f2] p-1 rounded-full max-[430px] w-[250px] h-[30px]'>
