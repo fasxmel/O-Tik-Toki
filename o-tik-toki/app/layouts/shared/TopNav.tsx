@@ -36,7 +36,7 @@ const TopNav = ({children}: {children: React.ReactNode}) => {
                <img  className='w-[80px] h-[80px] rounded-full' src="images/logo2.png" alt="logo" />
             </Link>
                           {/*TODO: Responsive search on mobile*/}
-            <div className='relative flex md:flex items-center justify-end bg-[#f1f1f2] p-1 rounded-full max-[430px] w-[250px] h-[30px]'>
+            <div className='relative hidden lg:flex md:flex items-center justify-end bg-[#f1f1f2] p-1 rounded-full max-[430px] w-[250px] h-[30px]'>
                <input 
                className='w-full p-3 m-2 bg-transparent placeholder-[#838383] text-[18px] focus:outline-none' 
                type="text" 
