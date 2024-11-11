@@ -64,8 +64,8 @@ const PostMain = ({ post }: PostMainCompTypes) => {
                 src={post?.video_url}
               />
               <img
-                className="absolute right-2 bottom-10"
-                width="90"
+                className="absolute left-0 top-0"
+                width="100"
                 src="images/logo1.png"
               />
             </div>

@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "O Tik-Toki",
   description: "Tik Tok Clone",
-  icons: '/images/logo3.png'
+  icons: '/images/logo1.png'
 };
 
 export default function RootLayout({

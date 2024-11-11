@@ -33,7 +33,7 @@ const TopNav = ({children}: {children: React.ReactNode}) => {
             
             <Link href={'/'}>
                               {/*TODO: Responsive search on mobile*/}  
-               <img  className='w-[80px] h-[80px] rounded-full' src="images/logo2.png" alt="logo" />
+               <img  className='w-[100px] h-[100px] rounded-full' src="images/logo1.png" alt="logo" />
             </Link>
                           {/*TODO: Responsive search on mobile*/}
             <div className='relative hidden lg:flex md:flex items-center justify-end bg-[#f1f1f2] p-1 rounded-full max-[430px] w-[250px] h-[30px]'>
