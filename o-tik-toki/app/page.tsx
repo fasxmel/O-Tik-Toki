@@ -3,7 +3,9 @@ import ClientOnly from "./components/ClientOnly";
 import PostMain from "./components/PostMain";
 import MainLayout from "./layouts/MainLayout";
 
+
 const Home = ()=> {
+
   return (
     <>
     
@@ -33,4 +35,4 @@ const Home = ()=> {
   );
 }
 
-export default Home
+export default Home;

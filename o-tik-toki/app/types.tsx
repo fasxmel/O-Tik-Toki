@@ -24,6 +24,15 @@ export interface Like {
     user_id: string,
 }
 
+export interface Post {
+    id: string;
+    user_id: string;
+    video_url: string;
+    text: string;
+    created_at: string;
+}
+
+
 export interface Comment{
     id: string,
     post_id: string,
@@ -49,6 +58,19 @@ export interface PostMainCompTypes {
 
 export interface PostMainLikesCompTypes {
     post: PostMainProfile
+}
+
+export interface ProfilePageTypes {
+    params: { id: string; };
+}
+
+export interface PostUserCompTypes {
+    post: Post
+}
+
+
+export interface UploadLayoutCompTypes {
+    error?: UploadError
 }
 
 
