@@ -1,27 +1,39 @@
 export interface RandomUser {
-    id: string,
-    name: string,
-    avatar: string,
+    id: string;
+    name: string;
+    avatar: string;
+}
+
+export interface CropperDimensions {
+    width?: number | null;
+    height?: number | null;
+    left?: number | null;
+    top?: number | null;
+}
+
+export interface ShowErrorObject {
+    message: string;
+    type: string;
 }
 
 export interface PostMainProfile {
-    id: string,
-    user_id: string,
-    video_url: string,
-    text: string,
-    video: string,
-    created_at: string,
+    id: string;
+    user_id: string;
+    video_url: string;
+    text: string;
+    video: string;
+    created_at: string;
     profile: {
-        user_id: string,
-        name: string,
-        avatar: string,
+        user_id: string;
+        name: string;
+        avatar: string;
     }
 }
 
 export interface Like {
-    id: string,
-    post_id: string,
-    user_id: string,
+    id: string;
+    post_id: string;
+    user_id: string;
 }
 
 export interface Post {
@@ -34,16 +46,16 @@ export interface Post {
 
 
 export interface Comment{
-    id: string,
-    post_id: string,
-    user_id: string,
-    text: string,
-    created_at: string,
+    id: string;
+    post_id: string;
+    user_id: string;
+    text: string;
+    created_at: string;
 }
 
 export interface UploadError {
-    type: string,
-    message: string
+    type: string;
+    message: string;
 }
 
 ////////////////////////////////////////////////////////////////
@@ -78,12 +90,21 @@ export interface UploadLayoutCompTypes {
 // LAYOTS INCLUDES TAYPES
 
 export interface MenuItemsTypes {
-    iconString: string,
-    colorString: string,
-    sizeString: string,
+    iconString: string;
+    colorString: string;
+    sizeString: string;
 }
 
 export interface MenuItemsCompTypes {
     user: RandomUser      
+}
+
+export interface TextInputCompTypes {
+    string: string;
+    inputType: string;
+    placeholder: string;
+    error: string;
+    onUpdate: (newValue: string) => void;
+   
 }
 
