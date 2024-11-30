@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import { BsPencil } from "react-icons/bs";
 
 const Profile = ({ params }: ProfilePageTypes) => {
-    //  Hydration error
+    
     const [isLoaded, setIsLoaded] = useState(false);
     useEffect(() => {
       setIsLoaded(true);
