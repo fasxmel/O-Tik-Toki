@@ -85,6 +85,15 @@ export interface UploadLayoutCompTypes {
     error?: UploadError
 }
 
+export interface PostPageTypes {
+    params: { postId: string; userId: string; };
+}
+
+export interface CommentsHeaderCompTypes {
+    params: { postId: string; userId: string; };
+    post: PostMainProfile
+}
+
 
 
 // LAYOTS INCLUDES TAYPES
