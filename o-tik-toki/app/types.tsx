@@ -44,6 +44,19 @@ export interface Post {
     created_at: string;
 }
 
+export interface CommentWhitProfile {
+    id: string;
+    post_id: string;
+    user_id: string;
+    text: string;
+    created_at: string;
+    profile: {
+        user_id: string;
+        name: string;
+        avatar: string;
+    }
+}
+
 
 export interface Comment{
     id: string;
@@ -92,6 +105,15 @@ export interface PostPageTypes {
 export interface CommentsHeaderCompTypes {
     params: { postId: string; userId: string; };
     post: PostMainProfile
+}
+
+export interface CommentsCompTypes {
+    params: { userId: string; postId: string; };
+}
+
+export interface SingleCommentCompTypes {
+    comment: CommentWhitProfile
+    params: { userId: string; postId: string; };
 }
 
 
