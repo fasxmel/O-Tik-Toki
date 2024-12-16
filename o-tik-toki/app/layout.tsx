@@ -17,8 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-     <AuthOverlay />
+     
       <body>
+       <AuthOverlay />
         {children}
       </body>
     </html>
